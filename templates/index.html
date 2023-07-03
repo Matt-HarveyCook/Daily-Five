@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block name %}General Page{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet"> -->
+    <link type = "text/css" rel="stylesheet" href="{{ url_for('static', filename ='indexStyles.css') }}">
+{% endblock %}
+
+{% block title %} Login Page {% endblock %}
+
+{% block content %}
+    {{ super() }}
+    {% block nav %} <li><a href="login">Login</a></li> {% endblock %}
+        
+        <div class="mainLogo"></div>
+        <div class="empty">  </div>
+
+    
+        <div class="one">
+            <span class="dot">1</span>
+            <p class="instructions">Easy to digest daily news headlines</p>
+            <!-- <img style="border: 5px solid #555" src="one.png" alt="One"> -->
+        </div>
+
+        <div class="two"> 
+            <span class="dot">2</span>
+            <p class="instructions">Customisable so you can pick which news you see</p>
+            <!-- <img style="border: 5px solid #555" src="two.png" alt="Two">  -->
+        </div>
+
+        <div class="three"> 
+            <span class="dot">3</span>
+            <p class="instructions">With no sign up fee, it's open to all</p>
+            <!-- <img src="three.png" alt="three">  -->
+        </div>
+
+        <div class = "para1">
+            <h3>Headline 1</h3>
+            What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        </div>
+        <div class = "para2">
+            <h3>Headline 2</h3>
+            What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        </div>
+
+{% endblock %}

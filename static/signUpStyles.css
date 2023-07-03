@@ -1,0 +1,80 @@
+@import "baseStyles.css";
+
+.registration{
+
+    font-size: 5rem;
+    grid-column-start:1;
+    grid-column-end:15;
+    grid-row-start:3;
+    grid-row-end:4;
+    text-align:center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--blue);
+    font-family: var(--font);
+
+}
+
+.inputs{
+    font-size: 5rem;
+    grid-column-start:1;
+    grid-column-end:15;
+    grid-row-start:4;
+    grid-row-end:7;
+    display: flex;
+    justify-content: center;
+}
+
+.emailForm{
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+    height: 4rem;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding-left: 30px;
+    
+}
+
+.emailFormDiv{
+    display:flex;
+    justify-content: center;
+}
+
+.interest{
+    display:flex;
+    justify-content: center;
+}
+
+.checkbox{
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    display:flex;
+    justify-content: center;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    accent-color: var(--secondary-color);
+}
+
+
+.submitButton {
+    padding: 2rem;
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.submitButtonDiv{
+    display:flex;
+    justify-content: center;
+}
+
+.submitButton:hover {
+    color: orange;
+}

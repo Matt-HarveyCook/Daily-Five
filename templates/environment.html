@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block name %}Environment Page{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link type = "text/css" rel="stylesheet" href="{{ url_for('static', filename ='environmentStyles.css') }}">
+{% endblock %}
+{% block content %}
+    {{ super() }}
+    {% if articles %}
+        {% for article in articles %}
+        <div class="articles">
+            <div class="article">
+                <h3 class="{{ 'article-title-left' if (articles.index(article) % 2 == 0) else 'article-title-right'}}">{{ article.title }}</h3>
+                <p class="article-content">{{ article.content }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+{% block title %} Environment {% endblock %}

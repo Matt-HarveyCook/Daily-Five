@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block name %}My Account Page{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link type = "text/css" rel="stylesheet" href="{{ url_for('static', filename ='accountStyles.css') }}">
+{% endblock %}
+{% block content %}
+    {{ super() }}
+{% endblock %}
+{% block title %} My Account {% endblock %}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block name %}Login Page{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='loginStyles.css') }}" />
+{% endblock %}
+
+{% block title %} Login Page {% endblock %}
+
+{% block content %}
+    {{ super() }}    
+    {% block nav %} <li><a href="account">My Account</a></li> {% endblock %}
+
+
+        <div class="login">Login</div>
+        
+        <div class="inputs">
+            <form action="{{ url_for('login')}}" method="post">
+                {% if came_from %}
+                {% if came_from != 'http://127.0.0.1:5000/' %}
+                <div class="" role="alert">
+                    <strong><i>You must be logged in to see that page</i></strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endif %}
+                {% endif %}
+                <div class="areaFill"></div>
+                {% if error %}
+                <div class="" role="alert">
+                    <strong>{{ error }}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endif %}
+                <div class="emailFormDiv">
+                    <ul>
+                            <li><input type="text" placeholder="Email" name="email" id="email" required class="emailForm" value = "{{ email if email else ''}}"></li>
+                    <br>
+                            <li><input type="password" placeholder="Enter Password" name="password" id="psw" required class="emailForm" value = "{{ password if password else ''}}"></li>
+                    </ul>
+                </div>
+
+                <div class="areaFill"></div>
+                <div class="areaFill"></div>
+
+                <div class="submitButtonDiv">
+                    <input type="submit" value="Submit" class="submitButton">
+                </div>
+
+                <div class="areaFill"></div>
+                <p class="signUp">Don't have an account yet? Register</p>
+                <a class="signUp" href="/signup">here!</a>
+                    
+            </form>
+        </div>
+    
+{% endblock %}

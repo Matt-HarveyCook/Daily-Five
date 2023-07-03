@@ -1,0 +1,34 @@
+@import "baseStyles.css";
+
+.container {
+    width: 100vw;
+    display: block;
+    font-family: var(--font);
+}
+
+.articles {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.article {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.article-title-left {
+    font-size: 2rem;
+    text-align: left;
+    color: var(--blue);
+}
+
+.article-title-right {
+    font-size: 2rem;
+    text-align: right;
+    color: var(--blue);
+}
+
+.article-content {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,95 @@
+:root {
+    --main-color: #FFC6A1;
+    --secondary-color: #FF9853;
+    --blue: #2963B3;
+    --font: 'Open Sans', sans-serif;
+}
+
+*, *::after, ::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font);
+    font-size: 1rem;
+
+    display: grid;
+
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: 2rem 2rem 1fr 1fr 1fr 1fr 2rem 4rem 1fr 1fr 1fr;
+}
+
+.logo{
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url('dailyfive.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #2963B3;
+    
+}
+
+.header {
+    background-color: #2963B3;
+    list-style-type: none;
+    text-align: center;
+    padding: .9rem;
+    grid-column-start: 2;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+li {
+   display:  inline;
+}
+
+a {
+    padding: 6rem;
+    color: white;
+    font-size: 160%;
+    text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+.empty{
+    grid-column-start: 1;
+    grid-column-end: 15;
+    grid-row-start:8;
+    grid-row-end:9;
+    background-color: var(--secondary-color);
+}
+
+.title{
+    font-size: 5rem;
+    grid-column-start:1;
+    grid-column-end:15;
+    grid-row-start:3;
+    grid-row-end:4;
+    text-align:center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--blue);
+    font-family: var(--font);
+}
+
+.areaFill{
+    padding: 2rem;
+}

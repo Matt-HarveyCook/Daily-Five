@@ -1,0 +1,90 @@
+@import "baseStyles.css";
+
+.mainLogo {
+    grid-column-start: 1;
+    grid-column-end: 15;
+    grid-row-start: 3;
+    grid-row-end: 8;     
+    background-image: url('dailyfive.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--main-color);
+    width: auto;
+    height: auto;
+    padding: 8rem;
+
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start:9;
+    grid-row-end:10;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 2rem 1rem 2rem 10rem;
+    
+}
+
+.two{
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start:9;
+    grid-row-end:10;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+.three{
+    grid-column-start:10;
+    grid-column-end: 15;
+    grid-row-start:9;
+    grid-row-end:10;
+    text-align: center;
+    background-color: var(--secondary-color);
+    /* padding: 2rem; */
+    padding: 2rem 10rem 2rem 1rem;
+}
+
+
+.para1 {
+    grid-column-start:3;
+    grid-column-end:13;
+    grid-row-start:10;
+    grid-row-end:11;
+    text-align:left;
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding-top: 5rem;
+}
+.para2 {
+    grid-column-start:3;
+    grid-column-end:13;
+    grid-row-start:11;
+    grid-row-end:12;
+    text-align:right;
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding-top: 5rem;
+}
+
+.dot {
+height: 7rem;
+width: 7rem;
+background-color: #2963B3;
+border-radius: 50%;
+display: inline-block;
+line-height: 7rem;
+color: white;
+font-size: 3rem;
+font-family: var(--font);
+}
+
+.instructions {
+color: white;
+font-size: 1.5rem;
+font-family: var(--font);
+
+}
